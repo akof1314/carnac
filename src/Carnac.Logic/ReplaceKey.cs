@@ -85,6 +85,7 @@ namespace Carnac.Logic
             {Keys.RControlKey, "Ctrl"},
             {Keys.Alt, "Alt"},
             {Keys.LMenu, "Alt"},
+            {Keys.Next, "PageDown"}
         };
 
         static readonly Dictionary<Keys, string> SpecialCases = new Dictionary<Keys, string>
@@ -105,6 +106,7 @@ namespace Carnac.Logic
             {Keys.Back, "Back"},
             {Keys.Return, "Return"},
             {Keys.Escape, "Escape"},
+            {Keys.Next, "PageDown"}
         };
 
         // kept to continue to support keymaps parsing
