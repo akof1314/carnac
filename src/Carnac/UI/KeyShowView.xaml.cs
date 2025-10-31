@@ -101,6 +101,12 @@ namespace Carnac.UI
         private void WindowLoaded(object sender, RoutedEventArgs e)
         {
             sb = this.FindResource("clickHighlighterStoryboard") as Storyboard;
+            var vm = ((KeyShowViewModel)DataContext);
+            Duration d = TimeSpan.FromMilliseconds(vm.Settings.ClickFadeDelay);
+            foreach (DoubleAnimation da in sb.Children)
+            {
+                da.Duration = d;
+            }
         }
 
         void SettingsLeftChanged(object sender, EventArgs e)
