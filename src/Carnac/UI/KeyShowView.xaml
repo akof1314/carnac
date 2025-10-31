@@ -422,7 +422,8 @@
                                             <SolidColorBrush Color="{Binding DataContext.Settings.FontColor, Source={x:Reference This}}" />
                                         </Border.Background>
                                         <StackPanel Orientation="Horizontal">
-                                            <Rectangle x:Name="icon" VerticalAlignment="Center" Margin="2" Width="{Binding DataContext.Settings.MouseKeySize, Source={x:Reference This}}" Height="{Binding DataContext.Settings.MouseKeySize, Source={x:Reference This}}"/>
+                                            <!--<Rectangle x:Name="icon" VerticalAlignment="Center" Margin="2" Width="{Binding DataContext.Settings.MouseKeySize, Source={x:Reference This}}" Height="{Binding DataContext.Settings.MouseKeySize, Source={x:Reference This}}"/>-->
+                                            <Rectangle x:Name="icon" VerticalAlignment="Center" />
                                             <TextBlock x:Name="KeyCap" Text="{Binding  }">
                                                 <TextBlock.Foreground>
                                                     <SolidColorBrush Color="{Binding DataContext.Settings.ItemBackgroundColor, Source={x:Reference This}}" />
@@ -471,6 +472,12 @@
                                         <Setter TargetName="KeyCap" Property="Control.Visibility" Value="Collapsed" />
                                         <Setter TargetName="icon" Property="Rectangle.Fill"
                                                 Value="{StaticResource Layer1}" />
+                                        <Setter TargetName="icon" Property="FrameworkElement.Width"
+                                                Value="{Binding DataContext.Settings.MouseKeySize, Source={x:Reference This}}" />
+                                        <Setter TargetName="icon" Property="FrameworkElement.Height"
+                                                Value="{Binding DataContext.Settings.MouseKeySize, Source={x:Reference This}}" />
+                                        <Setter TargetName="icon" Property="FrameworkElement.Margin"
+                                                Value="2" />
                                             </DataTrigger>
                                     <DataTrigger Value="LButton" Binding="{Binding .}">
                                         <Setter TargetName="regular" Property="Control.Visibility" Value="Collapsed" />
@@ -478,6 +485,12 @@
                                         <Setter TargetName="KeyCap" Property="Control.Visibility" Value="Collapsed" />
                                         <Setter TargetName="icon" Property="Rectangle.Fill"
                                             Value="{StaticResource LButton}" />
+                                        <Setter TargetName="icon" Property="FrameworkElement.Width"
+                                                Value="{Binding DataContext.Settings.MouseKeySize, Source={x:Reference This}}" />
+                                        <Setter TargetName="icon" Property="FrameworkElement.Height"
+                                                Value="{Binding DataContext.Settings.MouseKeySize, Source={x:Reference This}}" />
+                                        <Setter TargetName="icon" Property="FrameworkElement.Margin"
+                                                Value="2" />
                                             </DataTrigger>
                                     <DataTrigger Value="RButton" Binding="{Binding .}">
                                         <Setter TargetName="regular" Property="Control.Visibility" Value="Collapsed" />
@@ -485,6 +498,12 @@
                                         <Setter TargetName="KeyCap" Property="Control.Visibility" Value="Collapsed" />
                                                 <Setter TargetName="icon" Property="Rectangle.Fill"
                                         Value="{StaticResource RButton}" />
+                                        <Setter TargetName="icon" Property="FrameworkElement.Width"
+                                                Value="{Binding DataContext.Settings.MouseKeySize, Source={x:Reference This}}" />
+                                        <Setter TargetName="icon" Property="FrameworkElement.Height"
+                                                Value="{Binding DataContext.Settings.MouseKeySize, Source={x:Reference This}}" />
+                                        <Setter TargetName="icon" Property="FrameworkElement.Margin"
+                                                Value="2" />
                                             </DataTrigger>
                                     <DataTrigger Value="MButton" Binding="{Binding .}">
                                         <Setter TargetName="regular" Property="Control.Visibility" Value="Collapsed" />
@@ -492,6 +511,12 @@
                                         <Setter TargetName="KeyCap" Property="Control.Visibility" Value="Collapsed" />
                                                 <Setter TargetName="icon" Property="Rectangle.Fill"
                                     Value="{StaticResource MButton}" />
+                                        <Setter TargetName="icon" Property="FrameworkElement.Width"
+                                                Value="{Binding DataContext.Settings.MouseKeySize, Source={x:Reference This}}" />
+                                        <Setter TargetName="icon" Property="FrameworkElement.Height"
+                                                Value="{Binding DataContext.Settings.MouseKeySize, Source={x:Reference This}}" />
+                                        <Setter TargetName="icon" Property="FrameworkElement.Margin"
+                                                Value="2" />
                                             </DataTrigger>
                                     <DataTrigger Value="VolumeUp" Binding="{Binding .}">
                                             <Setter TargetName="regular" Property="Control.Visibility" Value="Collapsed" />
@@ -499,6 +524,12 @@
                                             <Setter TargetName="KeyCap" Property="Control.Visibility" Value="Collapsed" />
                                                 <Setter TargetName="icon" Property="Rectangle.Fill"
                                     Value="{StaticResource MWheelUp}" />
+                                            <Setter TargetName="icon" Property="FrameworkElement.Width"
+                                                    Value="{Binding DataContext.Settings.MouseKeySize, Source={x:Reference This}}" />
+                                            <Setter TargetName="icon" Property="FrameworkElement.Height"
+                                                    Value="{Binding DataContext.Settings.MouseKeySize, Source={x:Reference This}}" />
+                                            <Setter TargetName="icon" Property="FrameworkElement.Margin"
+                                                    Value="2" />
                                             </DataTrigger>
                                         <DataTrigger Value="VolumeDown" Binding="{Binding .}">
                                             <Setter TargetName="regular" Property="Control.Visibility" Value="Collapsed" />
@@ -506,6 +537,12 @@
                                             <Setter TargetName="KeyCap" Property="Control.Visibility" Value="Collapsed" />
                                                 <Setter TargetName="icon" Property="Rectangle.Fill"
                                     Value="{StaticResource MWheelDown}" />
+                                            <Setter TargetName="icon" Property="FrameworkElement.Width"
+                                                    Value="{Binding DataContext.Settings.MouseKeySize, Source={x:Reference This}}" />
+                                            <Setter TargetName="icon" Property="FrameworkElement.Height"
+                                                    Value="{Binding DataContext.Settings.MouseKeySize, Source={x:Reference This}}" />
+                                            <Setter TargetName="icon" Property="FrameworkElement.Margin"
+                                                    Value="2" />
                                             </DataTrigger>
                                         <DataTrigger Value="XButton1" Binding="{Binding .}">
                                             <Setter TargetName="regular" Property="Control.Visibility" Value="Collapsed" />
@@ -513,6 +550,12 @@
                                             <Setter TargetName="KeyCap" Property="Control.Visibility" Value="Collapsed" />
                                                 <Setter TargetName="icon" Property="Rectangle.Fill"
                                     Value="{StaticResource XButton1}" />
+                                            <Setter TargetName="icon" Property="FrameworkElement.Width"
+                                                    Value="{Binding DataContext.Settings.MouseKeySize, Source={x:Reference This}}" />
+                                            <Setter TargetName="icon" Property="FrameworkElement.Height"
+                                                    Value="{Binding DataContext.Settings.MouseKeySize, Source={x:Reference This}}" />
+                                            <Setter TargetName="icon" Property="FrameworkElement.Margin"
+                                                    Value="2" />
                                             </DataTrigger>
                                         <DataTrigger Value="XButton2" Binding="{Binding .}">
                                             <Setter TargetName="regular" Property="Control.Visibility" Value="Collapsed" />
@@ -520,6 +563,12 @@
                                             <Setter TargetName="KeyCap" Property="Control.Visibility" Value="Collapsed" />
                                             <Setter TargetName="icon" Property="Rectangle.Fill"
                                     Value="{StaticResource XButton2}" />
+                                            <Setter TargetName="icon" Property="FrameworkElement.Width"
+                                                    Value="{Binding DataContext.Settings.MouseKeySize, Source={x:Reference This}}" />
+                                            <Setter TargetName="icon" Property="FrameworkElement.Height"
+                                                    Value="{Binding DataContext.Settings.MouseKeySize, Source={x:Reference This}}" />
+                                            <Setter TargetName="icon" Property="FrameworkElement.Margin"
+                                                    Value="2" />
                                         </DataTrigger>
                                     </DataTemplate.Triggers>
                             </DataTemplate>
